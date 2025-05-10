@@ -1,0 +1,210 @@
+.frame {
+  width: 279px;
+  height: 354px;
+  background-color: #002845;
+  border-radius: 10px;
+}
+
+.frame .div {
+  position: relative;
+  width: 239px;
+  height: 319px;
+  top: 15px;
+  left: 20px;
+}
+
+.frame .div-2 {
+  position: absolute;
+  width: 239px;
+  height: 36px;
+  top: 5px;
+  left: 0;
+}
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 35px;
+  height: 36px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  width: 13px;
+  height: 15px;
+  top: 9px;
+  left: 11px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1px;
+  white-space: nowrap;
+}
+
+.frame .div-wrapper-2 {
+  left: 204px;
+  position: absolute;
+  width: 35px;
+  height: 36px;
+  top: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.frame .div-wrapper-3 {
+  left: 153px;
+  position: absolute;
+  width: 35px;
+  height: 36px;
+  top: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.frame .div-wrapper-4 {
+  left: 102px;
+  position: absolute;
+  width: 35px;
+  height: 36px;
+  top: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.frame .div-wrapper-5 {
+  left: 51px;
+  position: absolute;
+  width: 35px;
+  height: 36px;
+  top: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.frame .div-3 {
+  position: absolute;
+  width: 239px;
+  height: 36px;
+  top: 283px;
+  left: 0;
+}
+
+.frame .text-wrapper-2 {
+  position: absolute;
+  width: 13px;
+  height: 15px;
+  top: 9px;
+  left: 11px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1px;
+  white-space: nowrap;
+}
+
+.frame .div-4 {
+  position: absolute;
+  width: 239px;
+  height: 36px;
+  top: 227px;
+  left: 0;
+}
+
+.frame .div-5 {
+  position: absolute;
+  width: 239px;
+  height: 36px;
+  top: 171px;
+  left: 0;
+}
+
+.frame .div-6 {
+  position: absolute;
+  width: 239px;
+  height: 35px;
+  top: 116px;
+  left: 0;
+}
+
+.frame .div-7 {
+  position: absolute;
+  width: 239px;
+  height: 35px;
+  top: 61px;
+  left: 0;
+}
+
+.frame .div-wrapper,
+.frame .div-wrapper-2,
+.frame .div-wrapper-3,
+.frame .div-wrapper-4,
+.frame .div-wrapper-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame .text-wrapper,
+.frame .text-wrapper-2 {
+  position: relative; 
+  top: auto;
+  left: auto;
+  margin-top: -3px; 
+  margin-left: -2px;
+  width: auto; 
+  height: auto; 
+}
+
+.frame .div-wrapper:hover,
+.frame .div-wrapper-2:hover,
+.frame .div-wrapper-3:hover,
+.frame .div-wrapper-4:hover,
+.frame .div-wrapper-5:hover {
+  background-color: #2970A2;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  cursor: pointer;
+}
+
+.frame .div-wrapper:hover .text-wrapper,
+.frame .div-wrapper-2:hover .text-wrapper,
+.frame .div-wrapper-3:hover .text-wrapper,
+.frame .div-wrapper-4:hover .text-wrapper,
+.frame .div-wrapper-5:hover .text-wrapper,
+.frame .div-wrapper:hover .text-wrapper-2,
+.frame .div-wrapper-2:hover .text-wrapper-2,
+.frame .div-wrapper-3:hover .text-wrapper-2,
+.frame .div-wrapper-4:hover .text-wrapper-2,
+.frame .div-wrapper-5:hover .text-wrapper-2 {
+  color: #002845;
+  font-weight: 600;
+}
+
+.letter-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.letter-link:hover .div-wrapper {
+  background-color: #2970A2;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.frame .div-wrapper,
+.frame .div-wrapper-2,
+.frame .div-wrapper-3,
+.frame .div-wrapper-4,
+.frame .div-wrapper-5 {
+  transition: all 0.3s ease;
+}

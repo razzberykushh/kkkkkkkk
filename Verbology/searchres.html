@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .word-frame {
+        transition: all 0.3s ease;
+        position: relative;
+      }
+      
+      .close-square-svgrepo {
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+      
+      .close-square-svgrepo:hover {
+        transform: scale(1.1);
+      }
+    </style>
+<style>
+  .word-link {
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .word-link:hover {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .page-number {
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .page-number.active {
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+  
+  .page-number.active .ellipse {
+    background-color: #000000;
+  }
+  
+  .page-number.active .text-wrapper-29 {
+    color: black;
+  }
+  
+  .pagination-nav {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+</style>
+  </head>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('.search-input');
+    const plusIcon = document.querySelector('.plus-circle-svgrepo');
+    if (searchInput && plusIcon) {
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && this.value.trim()) {
+          window.location.href = 'searchres.html?query=' + encodeURIComponent(this.value.trim());
+        }
+      });
+      plusIcon.addEventListener('click', function() {
+      });
+    }
+  });
+</script>
+  <body>
+    <div class="search-RES">
+      <div class="div">
+        <div class="frame">
+          <div class="frame-wrapper">
+            <div class="frame-2">
+              <div class="overlap-group">
+  <input type="text" 
+         class="search-input" 
+         placeholder="Введите слово..."
+         aria-label="Поиск слова">
+</div>
+              <div class="plus-circle-svgrepo"></div>
+            </div>
+          </div>
+          <div class="frame-3">
+         <div class="frame-4">
+  <img class="polygon" src="img/polygon-1.svg" />
+  <p class="p"><span class="span">Просмотр</span> <span class="text-wrapper-2">&nbsp;</span></p>
+  <div class="menu-container">
+    <iframe src="menu.html" class="dropdown-menu"></iframe>
+  </div>
+</div>
+            <div class="text-wrapper-3">Популярные слова</div>
+           <a href="advanced-search.html" class="text-wrapper-4">Расширенный поиск</a>
+            <div class="text-wrapper-5">О нас</div>
+          </div>
+<a href="mainpaige.html">
+          <img class="LOGO" src="img/LOGO.svg" />
+          <img class="img" src="img/frame-28.svg" />
+</a>
+        </div>
+        <div class="frame-5">
+          <div class="text-wrapper-6">Сообщите об ошибке</div>
+          <img class="line" src="img/line-1.svg" />
+          <div class="text-wrapper-7">Политика конфиденциальности</div>
+          <img class="telegram-logo-thin" src="img/telegram-logo-thin-svgrepo-com-1.svg" />
+          <img class="mail-svgrepo-com" src="img/mail-svgrepo-com-1.png" />
+        </div>
+        <div class="text-wrapper-8">Результат поиска</div>
+        <div class="frame-6">
+          <div class="word-frame" id="frame-nouns">
+          <div class="frame-7">
+            <div class="frame-8">
+              <div class="text-wrapper-9">доброта</div>
+              <div class="text-wrapper-10">добро</div>
+              <div class="text-wrapper-11">добряк</div>
+              <div class="text-wrapper-12">добрячка</div>
+              <div class="text-wrapper-13">добродушие</div>
+              <div class="text-wrapper-14">доброжелатель</div>
+              <div class="text-wrapper-15">доброжелательность</div>
+            </div>
+            <div class="frame-9">
+              <div class="text-wrapper-16">Существительные</div>
+              <img class="close-square-svgrepo" src="img/close-square-svgrepo-com-1.png" onclick="closeFrame('frame-nouns')" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="word-frame" id="frame-adjectives">
+          <div class="frame-10">
+            <div class="frame-11">
+<a href="wordpage.html">
+              <div class="text-wrapper-17">добрый</div>
+</a>
+              <div class="text-wrapper-18">добрее</div>
+              <div class="text-wrapper-19">добрейший</div>
+              <div class="text-wrapper-20">добренький</div>
+            </div>
+            <div class="frame-12">
+              <div class="text-wrapper-16">Прилагательные</div>
+              <img class="close-square-svgrepo-2" src="img/close-square-svgrepo-com-2.png" onclick="closeFrame('frame-adjectives')" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="word-frame" id="frame-verbs">
+          <div class="frame-13">
+            <div class="frame-14">
+              <div class="text-wrapper-21">добрить</div>
+              <div class="text-wrapper-22">добриться</div>
+              <div class="text-wrapper-19">добрящий</div>
+            </div>
+            <div class="frame-15">
+              <div class="text-wrapper-16">Глаголы</div>
+              <img class="close-square-svgrepo-3" src="img/close-square-svgrepo-com-3.png" onclick="closeFrame('frame-verbs')" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="word-frame" id="frame-adverbs">
+          <div class="frame-16">
+            <div class="frame-17">
+              <div class="text-wrapper-18">добро</div>
+              <div class="text-wrapper-17">добродушно</div>
+              <div class="text-wrapper-19">доброжелательно</div>
+            </div>
+            <div class="frame-18">
+              <div class="text-wrapper-16">Наречия</div>
+              <img class="close-square-svgrepo-4" src="img/close-square-svgrepo-com-4.png" onclick="closeFrame('frame-adverbs')" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="word-frame" id="frame-phrases">
+          <div class="frame-19">
+            <div class="frame-20">
+              <div class="text-wrapper-17">добрый день</div>
+              <div class="text-wrapper-18">добрый вечер</div>
+              <div class="text-wrapper-19">добро пожаловать</div>
+              <div class="text-wrapper-20">добрый молодец</div>
+              <div class="text-wrapper-23">добрый человек</div>
+              <div class="text-wrapper-24">добрый знак</div>
+              <div class="text-wrapper-25">добрый совет</div>
+            </div>
+            <div class="frame-21">
+              <div class="text-wrapper-16">Уст. выражения и фразеологизмы</div>
+              <img class="close-square-svgrepo-5" src="img/close-square-svgrepo-com-5.png" onclick="closeFrame('frame-phrases')" />
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="frame-22">
+          <div class="frame-23">
+            <div class="text-wrapper-26">3</div>
+            <div class="text-wrapper-27">4</div>
+            <div class="text-wrapper-28">5</div>
+            <div class="overlap-group-wrapper">
+              <div class="overlap-group-2">
+                <div class="ellipse"></div>
+                <div class="text-wrapper-29">6</div>
+              </div>
+            </div>
+            <div class="text-wrapper-30">...</div>
+          </div>
+          <div class="frame-24">
+            <div class="text-wrapper-31">&lt;Прошл.</div>
+            <div class="text-wrapper-32">&lt;&lt;Нач.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script>
+      function closeFrame(frameId) {
+        const frame = document.getElementById(frameId);
+        const frame6 = document.querySelector('.frame-6');
+        const wordFrames = Array.from(document.querySelectorAll('.word-frame'));
+        
+        const visibleFrames = wordFrames.filter(f => 
+          f.style.display !== 'none' && f.id !== frameId
+        );
+        
+        if (visibleFrames.length === 0) {
+          frame.style.opacity = '0';
+          setTimeout(() => {
+            frame.style.display = 'none';
+          }, 300);
+          return;
+        }
+        
+        frame.style.opacity = '0';
+        frame.style.transform = 'translateX(-100%)';
+        
+        setTimeout(() => {
+          frame.style.display = 'none';
+          
+          const remainingFrames = Array.from(document.querySelectorAll('.word-frame'))
+            .filter(f => f.style.display !== 'none');
+            
+          remainingFrames.forEach(f => {
+            f.style.position = '';
+            f.style.left = '';
+            f.style.top = '';
+            f.style.opacity = '';
+            f.style.transform = '';
+          });
+          
+          setTimeout(() => {
+            remainingFrames.forEach((f, index) => {
+              f.style.transition = 'all 0.3s ease';
+              f.style.transform = `translateX(${-index * 20}px)`;
+            });
+          }, 10);
+        }, 300);
+      }
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.querySelector('.search-input');
+        const plusIcon = document.querySelector('.plus-circle-svgrepo');
+        
+        if (searchInput && plusIcon) {
+          searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && this.value.trim()) {
+              window.location.href = 'searchres.html?query=' + encodeURIComponent(this.value.trim());
+            }
+          });
+        }
+      });
+    </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const wordWrappers = [];
+    for (let i = 9; i <= 25; i++) {
+      wordWrappers.push(...document.querySelectorAll(`.text-wrapper-${i}`));
+    }
+    
+    const excludedClasses = ['text-wrapper-16'];
+    const words = wordWrappers.filter(wrapper => 
+      !excludedClasses.some(cls => wrapper.classList.contains(cls))
+    );
+    
+    words.forEach(wrapper => {
+      const text = wrapper.textContent;
+      wrapper.innerHTML = '';
+      const words = text.split(' ');
+      words.forEach(word => {
+        const span = document.createElement('span');
+        span.className = 'word-link';
+        span.textContent = word + ' ';
+        wrapper.appendChild(span);
+      });
+    });
+    
+    const pagination = document.querySelector('.frame-22');
+    if (pagination) {
+      pagination.classList.add('pagination');
+      
+      const navItems = pagination.querySelectorAll('.text-wrapper-31, .text-wrapper-32');
+      navItems.forEach(item => {
+        item.classList.add('pagination-nav');
+      });
+      
+      let currentPage = 0;
+      const pageNumbers = pagination.querySelectorAll('.text-wrapper-26, .text-wrapper-27, .text-wrapper-28, .text-wrapper-29');
+      
+      setInterval(() => {
+        pageNumbers.forEach((num, index) => {
+          if (index === currentPage) {
+            num.parentElement.classList.add('active');
+          } else {
+            num.parentElement.classList.remove('active');
+          }
+        });
+        
+        currentPage = (currentPage + 1) % pageNumbers.length;
+      }, 2000);
+    }
+  });
+</script>
+  </body>
+</html>

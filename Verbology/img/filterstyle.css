@@ -1,0 +1,130 @@
+.frame {
+  position: relative;
+  width: 300px;
+  height: 216px;
+  background-color: #002845;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.frame .div {
+  position: absolute;
+  width: 248px;
+  height: 60px;
+  top: 32px;
+  left: 26px;
+}
+
+.frame .overlap-group-wrapper {
+  position: absolute;
+  width: 248px;
+  height: 17px;
+  top: 21px;
+  left: 0;
+}
+
+.frame .overlap-group {
+  position: relative;
+  height: 17px;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 240px;
+  height: 8px;
+  top: 5px;
+  left: 8px;
+  background-color: #d9d9d9;
+  border-radius: 999px;
+}
+
+.frame .ellipse {
+  position: absolute;
+  width: 16px;
+  height: 17px;
+  top: 0;
+  left: 0;
+  background-color: #001a2d;
+  border-radius: 8px / 8.5px;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  top: 41px;
+  left: 8px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 18.2px;
+  white-space: nowrap;
+}
+
+.frame .div-2 {
+  position: absolute;
+  width: 240px;
+  height: 18px;
+  top: 0;
+  left: 8px;
+}
+
+.frame .text-wrapper-2 {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 18.2px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  top: -1px;
+  left: 232px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 18.2px;
+  white-space: nowrap;
+}
+
+.frame .div-3 {
+  position: absolute;
+  width: 248px;
+  height: 60px;
+  top: 124px;
+  left: 26px;
+}
+
+.frame .overlap-group-2 {
+  position: relative;
+  width: 243px;
+  height: 17px;
+  left: 5px;
+}
+
+.frame .rectangle-2 {
+  position: absolute;
+  width: 240px;
+  height: 8px;
+  top: 5px;
+  left: 3px;
+  background-color: #d9d9d9;
+  border-radius: 999px;
+}
+
+.frame .close-svgrepo-com {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 10px;
+  left: 277px;
+  object-fit: cover;
+}
